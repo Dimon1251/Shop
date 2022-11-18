@@ -1,0 +1,229 @@
+[
+    {
+      "shopName": "Clothes",
+      "shopId": "1",
+      "productId": "1",
+      "title": "Cotton Lace Blouse",
+      "text": "Cotton Lace Blouse",
+      "price": "111",
+      "image": [{"images": "blouse1.jpg"}],
+      "quantity": "1",
+      "colors": [
+        { "color": "black", "active": false},
+        { "color": "white", "active": false},
+        { "color": "blue",  "active": false},
+        { "color": "green", "active": false}
+      ],
+      "activecolor": ""
+
+    },
+    {
+      "shopName": "Clothes",
+      "shopId": "1",
+      "productId": "2",
+      "title": "Mom High Waist Shorts",
+      "text": "Mom High Waist Shorts",
+      "price": "176",
+      "image": [{"images": "shorts1.jpg"}],
+      "quantity": "1",
+      "colors": [
+        { "color": "black", "active": false},
+        { "color": "white", "active": false},
+        { "color": "blue",  "active": false},
+        { "color": "green", "active": false}
+      ],
+      "activecolor": ""
+
+    },
+    {
+      "shopName": "Clothes",
+      "shopId": "1",
+      "productId": "3",
+      "title": "Cotton Polo Regular Fit",
+      "text": "Cotton Polo Regular Fit",
+      "price": "129",
+      "image": [{"images": "polo1.jpg"}],
+
+      "quantity": "1",
+      "colors": [
+        { "color": "black", "active": false},
+        { "color": "white", "active": false},
+        { "color": "blue",  "active": false},
+        { "color": "green", "active": false}
+      ],
+      "activecolor": ""
+
+    },
+    {
+      "shopName": "Clothes",
+      "shopId": "1",
+      "productId": "4",
+      "title": "Block-colored Hooded Top",
+      "text": "Block-colored Hooded Top",
+      "price": "26",
+      "image": [{"images": "hooded1.jpg"}],
+
+      "quantity": "1",
+      "colors": [
+        { "color": "black", "active": false},
+        { "color": "white", "active": false},
+        { "color": "blue",  "active": false},
+        { "color": "green", "active": false}
+      ],
+      "activecolor": ""
+
+    },
+
+    {
+      "shopName": "Telephone",
+      "shopId": "2",
+      "productId": "1",
+      "title": "Apple iPhone 14",
+      "text": "Экран (6.1\", OLED (Super Retina XDR), 2532x1170) / Apple A15 Bionic / двойная основная камера: 12 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 16\n\n",
+      "price": "1125",
+      "image": [{"images": "iphone1.jpg"},{"images": "iphone2.jpg"},{"images": "iphone3.jpg"}],
+
+      "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+      "activecolor": ""
+
+    },
+      {
+        "shopName": "Telephone",
+        "shopId": "2",
+        "productId": "2",
+        "title": "Samsung Galaxy S21",
+        "text": "Экран (6.4\", Dynamic AMOLED 2X, 2340x1080) / Qualcomm Snapdragon 888 (2.84 ГГц) / тройная основная камера: 12 Мп + 12 Мп + 8 Мп, фронтальная 32 Мп / RAM 6 ГБ / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 11 / 4500 мА*ч\n\n",
+        "price": "677",
+        "image": [{"images": "samsung1.jpg"},{"images": "samsung2.jpg"},{"images": "samsung3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      },
+      {
+        "shopName": "Telephone",
+        "shopId": "2",
+        "productId": "3",
+        "title": "Nokia G11 3/32",
+        "text": "Экран (6.5\", IPS, 1600x720) / Unisoc T606 (2 x 1.6 ГГц + 6 x 1.6 ГГц) / тройная основная камера: 13 Мп + 2 Мп + 2 Мп, фронтальная 8 Мп / RAM 3 ГБ",
+        "price": "122",
+        "image": [{"images": "nokia1.jpg"},{"images": "nokia2.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      },
+      {
+        "shopName": "Telephone",
+        "shopId": "2",
+        "productId": "4",
+        "title": "Infinix Note 11",
+        "text": "Экран (6.7\", AMOLED, 2460х1080) / MediaTek Helio G88 (2 x 2.0 ГГц + 6 x 1.8 ГГц) / тройная основная камера: 50 Мп + 2 Мп + Ai",
+        "price": "198",
+        "image": [{"images": "infinix1.jpg"},{"images": "infinix2.jpg"},{"images": "infinix3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      },
+
+      {
+        "shopName": "Notebook",
+        "shopId": "3",
+        "productId": "1",
+        "title": "Acer Aspire 5 A515-45G-R9ML",
+        "text": "Экран 15.6\" IPS (1920x1080) Full HD, матовый / AMD Ryzen 5 5500U (2.1 - 4.0 ГГц) / RAM 8 ГБ / SSD 512 ГБ / AMD Radeon RX 640, 2 ГБ",
+        "price": "732",
+        "image": [{"images": "acer1.jpg"},{"images": "acer2.jpg"},{"images": "acer3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      },
+      {
+        "shopName": "Notebook",
+        "shopId": "3",
+        "productId": "2",
+        "title": "ASUS TUF Gaming F15 FX506LH-HN236",
+        "text": "Экран 15.6\" IPS (1920x1080) Full HD 144 Гц, матовый / Intel Core i5-10300H (2.5 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650, 4 ГБ ",
+        "price": "1003",
+        "image": [{"images": "asus1.jpg"},{"images": "asus2.jpg"},{"images": "asus3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      },
+      {
+        "shopName": "Notebook",
+        "shopId": "3",
+        "productId": "3",
+        "title": "Lenovo IdeaPad 3 15ALC6",
+        "text": "Экран 15.6\" IPS (1920x1080) Full HD, матовый / AMD Ryzen 5 5500U (2.1 - 4.0 ГГц) / RAM 16 ГБ / SSD 512 ГБ / AMD Radeon Graphics",
+        "price": "759",
+        "image": [{"images": "lenovo1.jpg"},{"images": "lenovo2.jpg"},{"images": "lenovo3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+      },
+      {
+        "shopName": "Notebook",
+        "shopId": "3",
+        "productId": "4",
+        "title": "Apple MacBook Air 13",
+        "text": "Экран 13.3\" Retina (2560x1600) WQXGA, глянцевый / Apple M1 / RAM 8 ГБ / SSD 256 ГБ / Apple M1 Graphics / Wi-Fi / Bluetooth / macOS Big Sur",
+        "price": "1166",
+        "image": [{"images": "apple1.jpg"},{"images": "apple2.jpg"},{"images": "apple3.jpg"}],
+
+        "quantity": "1",
+        "colors": [
+          { "color": "black", "active": false},
+          { "color": "white", "active": false},
+          { "color": "blue",  "active": false},
+          { "color": "green", "active": false}
+        ],
+        "activecolor": ""
+
+      }
+]
