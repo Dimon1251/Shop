@@ -9,12 +9,13 @@
       <span>{{item.title}}</span>
       <span>{{item.price}} $</span>
 
-      <button class ="btn-white btn-color" v-on:click="ChangeColor('white')"> </button>
-      <button class ="btn-red btn-color" v-on:click="ChangeColor('red')" > </button>
-      <button class ="btn-blue btn-color" v-on:click="ChangeColor('blue')" > </button>
-      <button class ="btn-green btn-color" v-on:click="ChangeColor('green')" > </button>
-
-      <button ref="btn" class="addcart" @click=AddtoCart(item)> Add to cart</button>
+      <div>
+        <button class ="btn-white btn-color" v-on:click="ChangeColor('white', index)"> </button>
+        <button class ="btn-red btn-color" v-on:click="ChangeColor('red', index)" > </button>
+        <button class ="btn-blue btn-color" v-on:click="ChangeColor('blue', index)" > </button>
+        <button class ="btn-green btn-color" v-on:click="ChangeColor('green', index)" > </button>
+      </div>
+      <button ref="btn" class="addcart" @click=AddtoCart(item) disabled> Add to cart</button>
 
     </div>
 
@@ -30,8 +31,14 @@ let store = useStore();
 let myJson = ref(json);
 let activecolor = ref('');
 
-  function ChangeColor(color){
+  function ChangeColor(color, index){
       activecolor = color;
+      let button = document.querySelectorAll("button[class='addcart']");
+      for (let i=0;i<button.length; i++){
+        button[i].disabled = true;
+      }
+      button[index].disabled = false;
+      console.log(button);
   }
 
   function AddtoCart (list) {
@@ -46,7 +53,13 @@ let activecolor = ref('');
 <style scoped>
 
 .image{
-  width: 240px;
+  max-height: 210px;
+  max-width: 210px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding-bottom: 30px;
+  cursor: pointer;
 }
 
 .catalog{
@@ -57,13 +70,15 @@ let activecolor = ref('');
 
 .catalog-card{
   margin: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 230px;
 }
 
 .catalog-card:hover{
-  border: 1px solid black;
+  border: 1px solid darkblue;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
 }
@@ -82,8 +97,8 @@ let activecolor = ref('');
 .btn-color{
   margin:15px 15px 15px 0;
   border-radius: 50px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border: 2px solid grey;
 }
 

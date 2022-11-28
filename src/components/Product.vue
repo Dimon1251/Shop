@@ -52,7 +52,7 @@ const props = defineProps(['list']);
       props.list.activecolor = color;
       let button = document.querySelector("button[class='btn-add']");
 /*
-      add не смог заменить эту строку на ref
+       не смог заменить эту строку на ref
 */
 
       button.disabled = false;

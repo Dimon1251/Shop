@@ -24,8 +24,8 @@ const store = new Vuex.Store({
 */
         },
 
-        DELETE_CAR(state, car) {
-            state.cart.splice(car.productId, 1);
+        DELETE_POST(state, product) {
+            state.cart.splice(product.productId, 1);
             localStorage.setItem('product', JSON.stringify(state.cart));
         }
     },

@@ -8,24 +8,26 @@
     </div>
     <div class ="info">
       <div v-for="(item, index) in sorteredItems"  class ="card">
-        <img :src="`/src/image/${item.image[0].images}`" alt=""/>
-
+        <div class ="image">
+          <img :src="`/src/image/${item.image[0].images}`" alt=""/>
+        </div>
         <div class ="name">
           <span>{{item.title}} ({{item.activecolor}})</span>
           <span>{{item.price}} $</span>
         </div>
-        <div class ="name">
+        <div class ="name-two">
           <span>Quantity</span>
-          <input type ="number" :value="item.quantity">
-          <span class="remove" @click="deletePost(item, index)">Remove</span>
+          <span>{{item.quantity}}</span>
         </div>
+        <button class="close-btn" @click="deletePost(item, index)">ㅤ</button>
+
       </div>
 
       <div class = "cart__totals">
         <span class="center" style="margin-bottom:10px ;">Cart Totals</span>
         <div style="display: flex; justify-content: space-between; ">
           <span> Subtotal</span>
-          <span> $50.00</span>
+          <span> 0</span>
         </div>
         <span class="center" style="margin-top: 25px"> Shipping</span>
         <div>
@@ -42,7 +44,7 @@
         </div>
         <span>Shipping to NY</span>
         <button class ="cart-button">Change address</button>
-        <span class="cart-price center">{{5 + price + ' $'}}</span>
+        <span class="cart-price center">Test</span>
       </div>
     </div>
 
@@ -56,7 +58,6 @@ import { ref, computed } from 'vue'
 import { useStore } from 'vuex'
 
 let store = useStore();
-let price = ref('0');
 
   const sorteredItems  = computed(() => {
     for (let i=0; i< store.state.cart.length; i++){
@@ -68,7 +69,7 @@ let price = ref('0');
 
     function deletePost(item, index) {
       item.productId = index;
-      store.commit('DELETE_CAR', item);
+      store.commit('DELETE_POST', item);
     }
 
 
@@ -104,8 +105,17 @@ let price = ref('0');
 }
 
 img{
-  width: 140px;
-  margin:20px;
+  max-height: 140px;
+  max-width: 140px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.image{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
 }
 
 .cart{
@@ -114,8 +124,12 @@ img{
 }
 
 .card{
+  margin:10px;
   display: flex;
   flex-direction: row;
+  border: 0.5px solid lightblue;
+  width: 760px;
+
 }
 
 .name{
@@ -124,6 +138,16 @@ img{
   font-size: 16px;
   margin: 15px 50px;
   justify-content: center;
+  width: 250px;
+}
+
+.name-two{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin: 15px 50px;
+  justify-content: center;
+  width: 100px;
 }
 
 input{
@@ -168,6 +192,12 @@ label{
 .cart-price{
   margin: 7px;
   font-size: 25px;
+}
+
+.close-btn{
+  cursor: pointer;
+  border: none;
+  background: url(/src/image/close.svg) no-repeat center;
 }
 
 </style>
